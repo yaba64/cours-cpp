@@ -1,2 +1,2 @@
 # cours-cpp
-Ex cours http://guillaume.belz.free.fr
+Exercices cours http://guillaume.belz.free.fr
