@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1535696615 source:/home/marc/Documents/Cours_Informatique/C++/cours-cpp/test/main.cpp
+	<iostream>
+	<limits>
+
