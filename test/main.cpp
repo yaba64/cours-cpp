@@ -1,35 +1,37 @@
-#include <random>
 #include <iostream>
-#include <ctime>
+#include <fstream>
+#include <string>
+using namespace std;
 
-int main() {
+int main()
+{
+    string const dico("dico.txt");
+    ifstream monFlux(dico.c_str());
 
-    auto const seed = std::time(nullptr);          // génération de la graine
+    if(monFlux)
+    {
+        string ligne;
+        int nbreLines = { 0 };
+        while ( getline(monFlux, ligne) )
+        {
+            ++nbreLines;
+        }
 
-    std::ranlux48_base engin { seed };     // générateur aléatoire
+        cout << nbreLines << endl;
+        cout << ligne << endl;
 
-    std::uniform_int_distribution<> uniform_int(-9, 6);     // loi uniforme sur des entiers
+        monFlux.close();
 
-    auto const de6faces = uniform_int(engin);              // génération
+        ifstream monFlux(dico.c_str());
+        getline(monFlux, ligne);
+        getline(monFlux, ligne);
+        cout << ligne << endl;
+    }
 
-    std::cout << de6faces << std::endl;
 
-
-
-    std::uniform_real_distribution<> uniform_real(-2, 2);   // loi uniforme sur des réels
-
-    auto const value2 = uniform_real(engin);              // génération
-
-    std::cout << value2 << std::endl;
-
-}/* LISTE DES ALGORITHMES
-std::minstd_rand0 ;
-std::minstd_rand ;
-std::mt19937 ;
-std::mt19937_64 ;
-std::ranlux24_base ;
-std::ranlux48_base ;
-std::ranlux24 ;
-std::ranlux48 ;
-std::knuth_b
-*/
+    else
+    {
+        cout << "ERREUR: Impossible d'ouvrir le fichier." << endl;
+    }
+    return 0;
+}

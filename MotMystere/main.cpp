@@ -1,16 +1,22 @@
 #include <iostream>
-#include <ctime> // Obligatoire
+#include <ctime>
+#include <fstream>
+#include <string>
 #include <cstdlib>
 using namespace std;
 
 // prototype
-string melangeMot(string motRecu);
+string melangeMot(string motRecu); // Fonction pour melanger le mot
+
+string motDeListe();
 
 
 int main()
 {
-    // Le programme choisi un mot au hasard à partir d'une liste A FAIRE!!!!!!!!
-    string motMystere("HAZARD");
+    // Le programme choisi un mot au hasard à partir d'une liste
+
+
+    string motMystere(motDeListe());
 
 
     // Le programme mélange les lettre du mot et l'affiche
@@ -63,3 +69,45 @@ string melangeMot(string motRecu)
     }
     return motMelange;
 }
+
+string motDeListe()
+{
+    string mot;
+    string ligne;
+    string const dico("dico.txt");
+    ifstream monFlux(dico.c_str());
+
+    int nbreLines = { 0 };
+    if(monFlux)
+    {
+
+        while ( getline(monFlux, ligne) )
+        {
+            ++nbreLines;
+        }
+
+        monFlux.close();
+
+        ifstream monFlux(dico.c_str());
+        // nombre Aléatoire
+        srand(time(0));
+        int const ligneAuHazard = rand() % nbreLines;
+
+        int position = { 0 };
+        while ( position != ligneAuHazard )
+        {
+            getline(monFlux, ligne);
+            ++position;
+        }
+        mot = ligne;
+
+    }
+    else
+    {
+        cout << "ERREUR: Impossible d'ouvrir le fichier." << endl;
+    }
+    return mot;
+}
+
+
+
