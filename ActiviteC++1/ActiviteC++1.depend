@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1536222840 source:d:\programmec++\activitec++1\main.cpp
+	<string>
+	<iostream>
+	<ctime>
+	<cstdlib>
+	<fstream>
+	<cctype>
+	<algorithm>
+
