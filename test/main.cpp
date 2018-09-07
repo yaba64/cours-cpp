@@ -1,18 +1,24 @@
 #include <iostream>
-#include <fstream>
-#include <string>
-using namespace std;
+using namespace std ;
 
-int main()
+main()
+
 {
-    int meilleurScore[5];
+    char op ;
+    int n1, n2 ;
 
-    meilleurScore[0] = true;
-    meilleurScore[1] = false;
+    cout << "opération souhaitée (+, - ou *) ? " ;
+    cin >> op ;
 
-    std::cout << std::boolalpha;
-    std::cout << meilleurScore[0] << endl;
-    cout << meilleurScore[0] << endl;
+    cout << "donnez 2 nombres entiers : " ;
+    cin >> n1 >> n2;
 
-    return 0;
+    if (op == '+')
+        cout << "leur somme est : " << n1+n2 << endl;
+    else if (op == '-')
+        cout << "leur différence est : " << n1-n2 << endl;
+    else
+        cout << "leur produit est : " << n1*n2 << endl;
+
+return 0;
 }
