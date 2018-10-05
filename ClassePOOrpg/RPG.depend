@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1536324282 source:d:\programmec++\cours-cpp\classepoorpg\arme.cpp
+	"Arme.h"
+
+1536324282 d:\programmec++\cours-cpp\classepoorpg\arme.h
+	<iostream>
+	<string>
+
+1538672779 source:d:\programmec++\cours-cpp\classepoorpg\main.cpp
+	<iostream>
+	<string>
+	"Personnage.h"
+
+1538755717 d:\programmec++\cours-cpp\classepoorpg\personnage.h
+	<iostream>
+	<string>
+	"Arme.h"
+
+1538755717 source:d:\programmec++\cours-cpp\classepoorpg\personnage.cpp
+	"Personnage.h"
+
