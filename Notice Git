@@ -1,0 +1,46 @@
+Identifiants Github : yaba64 ::: Mdp ::: idem
+
+pour creer dossier Git ::: git init 
+ou bien cloner repo de github avec https : git clone url:https
+
+git status ::: voir modification
+
+git log ::: voir hitorique commit
+
+git add . ::: ajouter les fichiers 
+
+git commit -m "" ::: ppour faire le commit sur machine avec commentaire
+git commit -am "" ::: pour ajouter et faire commit en même temps si fichier deja ajouter à l'index.
+
+git push origine master ::: envoyer sur github
+
+git pull origin master ::: pour recuperer les dernieres modifications en ligne (si travail a plusieurs ou avec plusieurs machines)
+
+git branch ::: connaitre les branches
+
+git branch maBranche ::: creer la branche maBranche
+
+git checkout maBranche ::: changer de branche
+
+git checkout -b ma-branche ::: pour creer une branche ET s'y positionner
+
+git merge mabranche ::: en étant dans branche master permet de fusionner mabranche avec master. Si pas de modification de master
+
+pour regler conflit : ouvrir le fichier avec editeu de texte et regler le conflit puis :
+git add monFichier
+git commit
+on peut ensuite recommencer la fusion
+
+git blame monFichier ::: pour revoir les modifications du fichier ( sha sont les debuts de commits, possible de rechercher le commit ds le log, la modif de chaque ligne est affiché avec son numero de sha )
+
+git show shaDuBlame ::: voir la modification exacte 
+
+creer le fichier .gitignore avec la liste des fichiers a ne pas committer (ce fichier doit etre add à l'index et committer comme les autres )
+
+git stash ::: mettre en attente un fichier pour aller travailler sur une autre branche sans committer
+
+git stash pop ::: recuperer le fichier en attente
+
+git stash apply ::: recuperer le fichier en attente et enregistrer le stash
+
+
