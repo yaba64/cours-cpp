@@ -2,6 +2,8 @@
 1536324282 source:d:\programmec++\cours-cpp\classepoorpg\arme.cpp
 	"Arme.h"
 
+1538755717 
+
 1536324282 d:\programmec++\cours-cpp\classepoorpg\arme.h
 	<iostream>
 	<string>
@@ -11,11 +13,33 @@
 	<string>
 	"Personnage.h"
 
+1538755717 e.h"
+
 1538755717 d:\programmec++\cours-cpp\classepoorpg\personnage.h
 	<iostream>
 	<string>
 	"Arme.h"
 
 1538755717 source:d:\programmec++\cours-cpp\classepoorpg\personnage.cpp
+	"Personnage.h"
+
+1536320682 source:/media/DATA/ProgrammeC++/cours-cpp/ClassePOOrpg/Arme.cpp
+	"Arme.h"
+
+1536320682 /media/DATA/ProgrammeC++/cours-cpp/ClassePOOrpg/Arme.h
+	<iostream>
+	<string>
+
+1538752318 source:/media/DATA/ProgrammeC++/cours-cpp/ClassePOOrpg/main.cpp
+	<iostream>
+	<string>
+	"Personnage.h"
+
+1538752117 /media/DATA/ProgrammeC++/cours-cpp/ClassePOOrpg/Personnage.h
+	<iostream>
+	<string>
+	"Arme.h"
+
+1538752117 source:/media/DATA/ProgrammeC++/cours-cpp/ClassePOOrpg/Personnage.cpp
 	"Personnage.h"
 
