@@ -5,6 +5,7 @@ int main()
 {
     int ageUtilisateur(16);
     int *ptr(0);
+    int ageAutreUtilisateur = &ageUtilisateur;
 
     ptr = &ageUtilisateur;
 
@@ -13,7 +14,8 @@ int main()
     cout << "La valeur de la variable pointée est : " << *ptr << endl;         // valeur de la variable pointé
     *ptr = 18;
     cout << "La nouvelle valeur de la variable pointée est : " << *ptr << endl;
-    cout << "La valeur de la variable est : " << ageUtilisateur << endl;
+    cout << "La valeur de la variable ageUtilisateur est : " << ageUtilisateur << endl;
+    cout << "La valeur de la variable ageAutreUtilisateur est : " << ageAutreutilisateur << endl;
     cout << "L'adresse du pointeur est : " << &ptr << endl;                    // cse mémoire du pointeur
 
     int *pointeur(0);
